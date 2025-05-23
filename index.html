@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portostar - Personal Portfolio</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="font-poppins">
+    <!-- Banner -->
+    <nav class="bg-bgLight py-6 fixed top-0 left-0 w-full">
+      <div class="max-w-7xl m-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center ">
+          <div class="flex shrink-0">
+            <a href="#">
+              <img src="./assets/images/logo.png" alt="" />
+            </a>
+          </div>
+          <!-- md menu -->
+          <div class="hidden md:block">
+            <ul class="text-sm flex gap-x-11">
+              <li>
+                <a href="#" class="inline-block duration-500 hover:text-primary"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a href="#" class="inline-block duration-500 hover:text-primary"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a href="#" class="inline-block duration-500 hover:text-primary"
+                  >SERVICES</a
+                >
+              </li>
+              <li>
+                <a href="#" class="inline-block duration-500 hover:text-primary"
+                  >WORKS</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- md btn -->
+          <div class="hidden md:block">
+            <button
+              class="py-3 px-7 text-white text-sm font-medium bg-primary rounded-4xl duration-500 hover:bg-primary/85"
+            >
+              HIRE ME <i class="fa-regular fa-envelope ml-2"></i>
+            </button>
+          </div>
+          <!-- bar button for sm -->
+          <div class="md:hidden">
+            <button id="btn"><i class="fa-solid fa-bars text-3xl"></i></button>
+          </div>
+        </div>
+        <!-- Menu for sm -->
+        <div
+          class="md:hidden flex-col items-center justify-center hidden flex py-5"
+          id="smMenu"
+        >
+          <ul class="text-sm space-y-3 text-center">
+            <li>
+              <a href="#" class="inline-block duration-500 hover:text-primary"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="inline-block duration-500 hover:text-primary"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a href="#" class="inline-block duration-500 hover:text-primary"
+                >SERVICES</a
+              >
+            </li>
+            <li>
+              <a href="#" class="inline-block duration-500 hover:text-primary"
+                >WORKS</a
+              >
+            </li>
+          </ul>
+          <button
+            class="mt-3 py-3 px-7 text-white text-sm font-medium bg-primary rounded-4xl duration-500 hover:bg-primary/85"
+          >
+            HIRE ME <i class="fa-regular fa-envelope ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-bgLight pb-21 md:pb-35 pt-25">
+      <div class="max-w-7xl m-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-x-10">
+          <div class="md:w-1/2 w-full space-y-8 text-center md:text-start">
+            <h5 class="font-medium text-base text-primary">DAVID FLASH</h5>
+            <h1 class="font-bold text-5xl md:text-6xl leading-19">
+              Hello, my name’s David. I’m graphic designer.
+            </h1>
+            <div
+              class="w-full flex flex-col md:flex-row justify-center items-center md:justify-start"
+            >
+              <button
+                class="py-4 px-7 text-white text-sm font-medium bg-primary rounded-4xl duration-500 hover:bg-primary/85"
+              >
+                <i class="fa-regular fa-envelope mr-2"></i>CONTACT ME
+              </button>
+              <button
+                class="py-4 px-7 text-bgDark text-sm font-medium rounded-4xl duration-500"
+              >
+                <i class="fa-solid fa-download mr-2"></i>DOWNLOAD CV
+              </button>
+            </div>
+          </div>
+          <div
+            class="md:w-1/2 w-full flex justify-center md:justify-end mt-5 md:mt-0"
+          >
+            <div
+              class="max-w-[400px] min-w-[150px] aspect-square overflow-hidden"
+            >
+              <img
+                src="./assets/images/hero.jpg"
+                alt="Hero img"
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success -->
+     <section class="md:pt-28 md:pb-20 pt-16 pb-11">
+        <div class="max-w-7xl px-4 md:px-6 lg:px-8 m-auto">
+            <div class="flex justify-between flex-wrap gap-y-12">
+                <div class="w-1/2 md:w-1/4 text-center">
+                    <h4 class="font-semibold text-5xl">100+</h4>
+                    <p class=" text-base text-[#121212]">PROJECTS</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 text-center">
+                    <h4 class="font-semibold text-5xl">24</h4>
+                    <p class=" text-base text-[#121212]">WINNING AWARD</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 text-center">
+                    <h4 class="font-semibold text-5xl">70+</h4>
+                    <p class=" text-base text-[#121212]">HAPPY CLIENTS</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 text-center">
+                    <h4 class="font-semibold text-5xl">10</h4>
+                    <p class=" text-base text-[#121212]">YEAR EXPERIENCE</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- SERVICES -->
+      <section class="mb-35">
+        <div class="max-w-7xl px-4 m-auto md:px-6 lg:px-8">
+            <div class="text-center">
+                <h5 class="text-base font-medium text-primary">SERVICES</h5>
+                <h2 class="font-semibold text-4xl md:text-[44px] my-3">What I Do For My Customer.</h2>
+                <p class="text-base text-[#121212bd] md:w-1/2 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at dictum nisl.</p>
+                <div class="mt-16 flex gap-x-10 gap-y-8 flex-col md:flex-row items-center justify-center">
+                    <div class="p-9 text-center bg-white group drop-shadow-2xl rounded-3xl hover:bg-bgLight transition-all duration-500 max-w-[380px]">
+                        <img src="./assets/images/ux.png" alt="Service Logo" class="m-auto">
+                        <h4 class="text-xl font-medium mb-3 mt-8">UI/UX Design</h4>
+                        <p class="text-base text-[#121212a9]">lorem ipsum dolor sit amet consectur adi pising leo</p>
+                    </div>
+                    <div class="p-9 text-center bg-white group drop-shadow-2xl rounded-3xl hover:bg-bgLight transition-all duration-500 max-w-[380px]">
+                        <img src="./assets/images/ux.png" alt="Service Logo" class="m-auto">
+                        <h4 class="text-xl font-medium mb-3 mt-8">UI/UX Design</h4>
+                        <p class="text-base text-[#121212a9]">lorem ipsum dolor sit amet consectur adi pising leo</p>
+                    </div>
+                    <div class="p-9 text-center bg-white group drop-shadow-2xl rounded-3xl hover:bg-bgLight transition-all duration-500 max-w-[380px]">
+                        <img src="./assets/images/ux.png" alt="Service Logo" class="m-auto">
+                        <h4 class="text-xl font-medium mb-3 mt-8">UI/UX Design</h4>
+                        <p class="text-base text-[#121212a9]">lorem ipsum dolor sit amet consectur adi pising leo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+       <section class="bg-bgLight md:py-28 py-20">
+        <div class="max-w-7xl px-4 m-auto md:px-6 lg:px-8">
+          <div class="">
+            <div class="w-full md:w-1/2 md:space-y-7 text-center md:text-start space-y-3">
+              <h5 class="text-base text-primary font-medium">GRAPHIC DESIGNER</h5>
+              <h2 class="font-bold md:text-6xl text-5xl leading-19">Graphic Designer With 10 Years Of Experience.</h2>
+              <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at dictum nisl.</p>
+              <button
+                class="py-4 px-7 text-white text-sm font-medium bg-primary rounded-4xl duration-500 hover:bg-primary/85"
+              >
+                <i class="fa-regular fa-envelope mr-2"></i>CONTACT ME
+              </button>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- Brands -->
+        <section class="py-15 md:py-25">
+          <div class="max-w-7xl px-4 m-auto md:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 justify-between items-center gap-6">
+              <div class="flex justify-center items-center">
+                <img src="./assets/images/brands-1.png" alt="Brands Logo">
+              </div>
+              <div class="flex justify-center items-center">
+                <img src="./assets/images/brands-2.png" alt="Brands Logo">
+              </div>
+              <div class="flex justify-center items-center">
+                <img src="./assets/images/brands-3.png" alt="Brands Logo">
+              </div>
+              <div class="flex justify-center items-center">
+                <img src="./assets/images/brands-4.png" alt="Brands Logo">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portflio -->
+         <section class="">
+            <div class="max-w-7xl px-4 m-auto md:px-6 lg:px-8">
+              <div class="">
+                <div class="md:flex justify-between items-center space-y-2 text-center md:text-start mb-7 md:mb-12">
+                  <div class="md:w-1/2 space-y-2.5">
+                    <h5 class="text-base font-medium text-primary">PORTFOLIO</h5>
+                    <h3 class="font-semibold md:text-5xl text-4xl">Selected Works.</h3>
+                  </div>
+                  <div class="md:w-1/2">
+                    <p class="text-base text-[#121212b9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at dictum nisl.</p>
+                  </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10 md:justify-between justify-center">
+                  <div class="rounded-3xl shadow-2xl max-w-[585px]">
+                    <img src="./assets/images/uxcover.png" alt="UX Photo" class="w-full">
+                    <div class="p-10">
+                      <h4 class="font-medium text-xl">Creativa - Elementor Template Kit</h4>
+                      <p class="text-base text-black/50">UI/UX Design</p>
+                    </div>
+                  </div>
+                  <div class="rounded-3xl shadow-2xl max-w-[585px]">
+                    <img src="./assets/images/uxcover2.png" alt="UX Photo" class="w-full">
+                    <div class="p-10">
+                      <h4 class="font-medium text-xl">Creativa - Elementor Template Kit</h4>
+                      <p class="text-base text-black/50">UI/UX Design</p>
+                    </div>
+                  </div>
+                  <div class="rounded-3xl shadow-2xl max-w-[585px]">
+                    <img src="./assets/images/uxcover2.png" alt="UX Photo" class="w-full">
+                    <div class="p-10">
+                      <h4 class="font-medium text-xl">Creativa - Elementor Template Kit</h4>
+                      <p class="text-base text-black/50">UI/UX Design</p>
+                    </div>
+                  </div>
+                  <div class="rounded-3xl shadow-2xl max-w-[585px]">
+                    <img src="./assets/images/uxcover.png" alt="UX Photo" class="w-full">
+                    <div class="p-10">
+                      <h4 class="font-medium text-xl">Creativa - Elementor Template Kit</h4>
+                      <p class="text-base text-black/50">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </section>
+
+         <!-- Clients Review -->
+          <section class="bg-bgLight md:py-35 py-28 md:mt-33 mt-16 relative">
+            <div class="max-w-7xl px-4 md:px-6 lg:px-8 m-auto">
+              <div class="text-center space-y-2.5">
+                <h5 class="text-base font-semibold text-primary">TESTIMONY</h5>
+              <h3 class="md:text-5xl font-semibold text-4xl">What Our Clients Say.</h3>
+              <p class="text-base text-[#121212bd] w-1/2 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at dictum nisl.</p>
+              </div>
+            </div>
+          </section>
+          <!-- Review Position -->
+           <div class="max-w-7xl px-4 md:px-6 lg:px-8 m-auto">
+            <div class="flex flex-col md:flex-row gap-x-10 relative -top-20 md:-top-26 left-0 z-30 gap-y-7 justify-center items-center md:justify-between">
+              <div class="space-y-7 rounded-3xl shadow-2xl p-10 bg-white transition-all duration-500 hover:bg-bgLight max-w-[590px]">
+                <div class="text-yellow-500">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h5 class="text-lg font-medium">Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui. Vestibulum nisl lorem, porta at mollis varius, tincidunt in lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.</h5>
+                <div class="flex justify-between">
+                  <div class="flex gap-x-2.5">
+                    <div class="w-16 h-16 object-cover">
+                      <img src="./assets/images/client.JPG" alt="Client photo" class="rounded-full">
+                    </div>
+                    <div class="txt">
+                      <h5 class="text-lg font-medium">David Gueta</h5>
+                      <p class="text-base text-black/50">UI/UX Designer</p>
+                    </div>
+                  </div>
+                  <div class="text-primary">
+                    <i class="fa-regular fa-message text-3xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-7 rounded-3xl shadow-2xl p-10 bg-white transition-all duration-500 hover:bg-bgLight max-w-[590px]">
+                <div class="text-yellow-500">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h5 class="text-lg font-medium">Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui. Vestibulum nisl lorem, porta at mollis varius, tincidunt in lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.</h5>
+                <div class="flex justify-between">
+                  <div class="flex gap-x-2.5">
+                    <div class="w-16 h-16 object-cover">
+                      <img src="./assets/images/client.JPG" alt="Client photo" class="rounded-full">
+                    </div>
+                    <div class="txt">
+                      <h5 class="text-lg font-medium">David Gueta</h5>
+                      <p class="text-base text-black/50">UI/UX Designer</p>
+                    </div>
+                  </div>
+                  <div class="text-primary">
+                    <i class="fa-regular fa-message text-3xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <!-- Contatc -->
+            <section class="mb-16 md:mb-32">
+              <div class="px-4 md:px-6 lg:px-8 max-w-7xl m-auto">
+                <div class="py-30 bg-bgLight rounded-3xl text-center ">
+                  <h2 class="md:text-5xl text-4xl font-bold md:w-1/3 lg:w-1/2 m-auto leading-18 mb-4 px-5 md:px-0">Interested Working With me? Let's connect!</h2>
+                  <button
+                class="py-4 px-7 text-white text-sm font-medium bg-primary rounded-4xl duration-500 hover:bg-primary/85"
+              >
+                <i class="fa-regular fa-envelope mr-2"></i>CONTACT ME
+              </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Footer -->
+             <footer class="text-white">
+              <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                <div class="bg-bgDark md:pt-28 pt-19 rounded-t-3xl md:pb-16 pb-10 mb-10 md:px-20 lg:px-40 px-15">
+                  <div class="md:flex">
+                    <div class="md:w-1/2 text-center md:text-start">
+                      <img src="./assets/images/footer-logo.png" alt="Footer logo" class="m-auto md:m-0">
+                      <p class="text-base md:pt-6 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit.</p>
+                    </div>
+                    <div class="md:w-1/2 flex md:justify-end justify-center mt-10 md:mt-0 text-center md:text-start">
+                      <div class="space-y-4">
+                        <p class="text-base space-x-2.5 duration-300 hover:text-primary"><i class="fa-regular fa-envelope"></i><a href="mailto:inquiry@portostar.com">inquiry@portostar.com</a></p>
+                      <p class="text-base space-x-2.5 duration-300 hover:text-primary"><i class="fa-solid fa-phone"></i><a href="call:(001) 1231 3435">(001) 1231 3435</a></p>
+                      <div class="space-x-6 text-lg">
+                        <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-dribbble"></i></a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="border-0 h-[1px] bg-gray-500 md:mt-35 mt-13 mb-9 md:mb-14">
+                  <div class="flex md:justify-between md:flex-row flex-col items-center">
+                    <div class="">
+                      <ul class="flex md:gap-x-12 gap-x-4"> 
+                        <li><a href="#" class="text-sm duration-300 hover:text-primary inline-block">HOME</a></li>
+                        <li><a href="#" class="text-sm duration-300 hover:text-primary inline-block">ABOUT US</a></li>
+                        <li><a href="#" class="text-sm duration-300 hover:text-primary inline-block">SERVICES</a></li>
+                        <li><a href="#" class="text-sm duration-300 hover:text-primary inline-block">WORKS</a></li>
+                      </ul>
+                    </div>
+                    <span class="text-base text-white/60 mt-4 md:mt-0">© All Right Reserved</span>
+                  </div>
+                </div>
+              </div>
+             </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
+
